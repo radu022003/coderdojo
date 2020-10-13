@@ -1,20 +1,219 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Radu-Nicolae Botezatu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultanță medicală penrtu tratamente în Germania">
+    <meta name="keywords" content="Constultanță, Medicală, Germania">
 
-<body>
-    <footer>
-        <h1>StartCodeIng Home page</h1>
-    </footer>
 
-    <main>
-        <h3>Some content will be added here</h3>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel = "icon" href =  "icons/hand-holding-medical-solid.png" type = "image/x-icon"> 
+    <script src="/js/main.js" type="text/javascript"></script>
+    
+    <title>
+      Medconsult
+    </title>
+  </head>
+  <body style="background-color: lightgreen;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">MedConsult</a>
+      <button
+        onclick="animateButton(this)"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#someContentHere"
+        aria-controls="someContentHere"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="nav-icon-container" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
 
-    </main>
+      <div class="collapse navbar-collapse" id="someContentHere">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Acasă <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Despre noi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Servicii
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Asistență</a>
+              <a class="dropdown-item" href="#">Consiliere</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Altele</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactați-ne</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Caută"
+            aria-label="Caută"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Caută
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="wrapper container" >
+    <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+      <div id="carouselExampleIndicators" class="carousel slide shadow rounded" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://via.placeholder.com/1200x500" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nou</h5>
+              <p>serviciu 1</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/1200x500" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Noi produse</h5>
+              <p>serviciu 2</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/1200x500" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Servicii de calitate</h5>
+              <p>serviciu 3</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      
+      <div class="col-sm-4 ">
+        <!-- Card -->
+        <div class="card shadow  mb-5 bg-white rounded">
+
+          <!-- Card image -->
+          <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title"><a>Titlu</a></h4>
+            <!-- Text -->
+            <!--#include file="text_files/home_coloana1.txt" -->
+          </div>
+
+        </div>
+        <!-- Card -->
+        
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card shadow  mb-5 bg-white rounded">
+
+          <!-- Card image -->
+          <img class="card-img-top" src="https://via.placeholder.com/300/0Af/fff.png" alt="Card image cap">
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title"><a>Titlu</a></h4>
+            <!-- Text -->
+            <!--#include file="text_files/home_coloana2.txt" -->
+          </div>
+
+        </div>
+        <!-- Card -->
+        
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card shadow  mb-5 bg-white rounded">
+
+          <!-- Card image -->
+          <img class="card-img-top" src="https://via.placeholder.com/300/fAf/fff.png" alt="Card image cap">
+
+          <!-- Card content -->
+          <div class="card-body ">
+
+            <!-- Title -->
+            <h4 class="card-title "><a>Titlu</a></h4>
+            <!-- Text -->
+            <!--#include file="text_files/home_coloana3.txt" -->
+          </div>
+
+        </div>
+        <!-- Card -->
+        
+      </div>
+    </div>
+
 
     <footer class="page-footer font-small">
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="#" style="text-decoration: none;">Contact</a>
-        </div>
-      </footer>
-</body>
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#" style="text-decoration: none;">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>
